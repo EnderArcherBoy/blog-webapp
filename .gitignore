@@ -1,36 +1,33 @@
-# Dependencies
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+# Backend
+blog-backend/node_modules/
+blog-backend/dist/
+blog-backend/build/
+blog-backend/coverage/
+blog-backend/*.log
+blog-backend/npm-debug.log*
+blog-backend/yarn-debug.log*
+blog-backend/yarn-error.log*
 
-# Build outputs
-dist/
-build/
-.next/
-out/
+# Frontend
+blog-frontend/node_modules/
+blog-frontend/.next/
+blog-frontend/build/
+blog-frontend/dist/
+blog-frontend/coverage/
+blog-frontend/*.log
+blog-frontend/npm-debug.log*
+blog-frontend/yarn-debug.log*
+blog-frontend/yarn-error.log*
 
-# Cache directories
-.cache/
-.npm/
-.eslintcache
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE specific files
+# IDE and OS files
 .idea/
 .vscode/
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 
-# Logs
-logs/
-*.log
-
-# Coverage directories
-coverage/
-
-# Keep .env file (contains only non-sensitive data)
+# Keep environment files (non-sensitive data only)
 !.env
+!blog-frontend/.env
+!blog-backend/.env
