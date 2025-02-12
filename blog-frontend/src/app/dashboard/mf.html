@@ -1,0 +1,23 @@
+<div className="flex h-screen bg-gray-100">
+    {/* Sidebar */}
+    <aside className="w-64 bg-gray-900 text-white p-6 shadow-lg">
+      <h2 className="text-2xl font-bold mb-4"><a href="/dashboard">Dashboard</a></h2>
+      <ul className="space-y-4">
+        {role === "admin" && <li className="cursor-pointer hover:text-gray-300"><a href="/dashboard/manage-users">Manage Users</a></li>}
+        {(role === "admin" || role === "writer") && <li className="cursor-pointer hover:text-gray-300"><a href="/dashboard/manage-articles">Manage Articles</a></li>}
+        <li className="cursor-pointer hover:text-gray-300"><a href="./">Go Back</a></li>
+      </ul>
+    </aside>
+
+    {/* Main Content */}
+    <main className="flex-1 p-8">
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold text-gray-800">Welcome, User</h1>
+        <p className="text-gray-600 mt-2">
+          {role === "admin" && "You have full control over the platform."}
+          {role === "writer" && "You can write and manage your own articles."}
+          {role === "reader" && "You can read articles."}
+        </p>
+      </div>
+    </main>
+  </div>
