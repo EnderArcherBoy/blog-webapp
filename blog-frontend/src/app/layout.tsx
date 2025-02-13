@@ -7,7 +7,7 @@ import { metadata } from "./metadata";
 import NavigationMenuDemo from "../components/navbar";
 import LogoTitle from "../components/logo";
 import ButtonLogin from "@/components/buttonlogin"; // Rename from ButtonDemo
-import FooterBlog from "../components/footer";
+import FooterBlog from "../components/footer/footer";
 import { Toaster } from 'react-hot-toast';
 
 const geistSans = localFont({

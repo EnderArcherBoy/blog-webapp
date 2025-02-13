@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Card from '@/components/Card';
 import { getUserRole } from '@/lib/auth';
 import Link from 'next/link';
-import BlogPage from "../components/banner";
+import BlogPage from "../components/banner/banner";
 
 interface Article {
   id: string;
